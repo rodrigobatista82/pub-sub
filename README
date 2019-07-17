@@ -1,0 +1,33 @@
+TODO:
+--------
+
+Some implementations omitted due to lack of time:
+
+* Needed to implement mutexes to make all the code thread safe.
+* Test of the code using unit tests.
+
+
+COMPILE:
+--------
+
+$ make
+
+
+RUN:
+--------
+
+./pub-sub
+
+
+Answers:
+--------
+
+Q: What is the message publish algorithm complexity in big-O notation?
+A: O(n) in the subscriber count.
+
+Q: What is the message poll algorithm complexity in big-O notation?
+A: O(log n) in the subscriber count, worst case O(n) in the count of the
+messages.
+
+Q: What is the memory (space) complexity in big-O notation for the algorithm?
+A: O(n).
